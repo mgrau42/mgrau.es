@@ -17,7 +17,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (lst)				/*si el elemento existe*/
 	{
-		del(lst->content);	/*eliminamos su contenido*/
+		del(lst->content);		/*eliminamos su contenido*/
 		free(lst);			/*liberamos la memoria*/
 		lst = NULL;			/*finalmente el puntero al elemento se fija como nulo*/
 	}
