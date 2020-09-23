@@ -20,7 +20,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	unsigned char	*cfound;
 
 	i = 0;
-	while (i < n)													/*se copia la cadena hasta el tamaño (n)*/
+	while (i < n)								/*se copia la cadena hasta el tamaño (n)*/
 	{
 		if (((unsigned char *)src)[i] == ((unsigned char)c))		/*en caso de encontrar el caracter c se realiza una ultima copia y se devuelve un puntero a ese caracter*/
 		{
@@ -32,5 +32,5 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
-	return (NULL);													/*en caso de no encotrar el caracter se realiza la copia y se devuelve nulo*/
+	return (NULL);								/*en caso de no encotrar el caracter se realiza la copia y se devuelve nulo*/
 }
