@@ -24,7 +24,7 @@ void	*ft_memmove(void *dest, const void *src, unsigned int n)
 	i = 0;
 	if ((src == NULL) && (dest == NULL))	/*se comprueban ambos parametros*/
 		return (NULL);
-	if (dest < src)							/*se realizan las copias*/
+	if (dest < src)				/*se realizan las copias*/
 	{
 		while (i < n)
 		{
