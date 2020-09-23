@@ -6,4 +6,7 @@ En un futuro planeo seguir actualizando este repositorio con proyectos y probabl
 
 Hasta entonces, gracias por su interes.
 
+23/sep/2020
+Añadida Libft, libreria de uso general con funciones utiles para el resto del curso 42 Madrid
+
 Manuel Alejandro Grau Bastidas. 
