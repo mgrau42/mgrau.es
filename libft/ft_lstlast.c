@@ -19,7 +19,7 @@ t_list	*ft_lstlast(t_list *lst)
 
 	tmp = lst;
 	if (lst)
-		while (tmp->next != '\0')	/* se recorre la lista hasta su ultimo elemento*/
+		while (tmp->next != '\0')		/* se recorre la lista hasta su ultimo elemento*/
 			tmp = tmp->next;
 	return (tmp); 					/* se devuelve la referencia a este ultimo elemento*/
 }
