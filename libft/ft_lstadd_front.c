@@ -16,5 +16,5 @@
 void	ft_lstadd_front(t_list **alst, t_list *new)
 {
 	new->next = alst[0];	/*se añade la posicion inicial de la lista al puntero next de el elemento new*/
-	alst[0] = new;			/*new se determina como la nueva posicion inicial de la lista*/
+	alst[0] = new;		/*new se determina como la nueva posicion inicial de la lista*/
 }
