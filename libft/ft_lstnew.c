@@ -22,7 +22,7 @@ t_list	*ft_lstnew(void *content)
 	if (!content)
 		newlst->content = NULL;
 	else
-		newlst->content = content;						/*se guarda content*/
-	newlst->next = NULL;								/*se guarda null en next para hacer referencia a que es el final de nuestra lista*/
-	return (newlst);									/*se devuelve la nueva lista*/
+		newlst->content = content;			/*se guarda content*/
+	newlst->next = NULL;					/*se guarda null en next para hacer referencia a que es el final de nuestra lista*/
+	return (newlst);					/*se devuelve la nueva lista*/
 }
