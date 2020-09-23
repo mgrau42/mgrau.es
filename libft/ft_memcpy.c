@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	if ((src == NULL) && (dest == NULL))							/*se comprueban los parametros pasados*/
+	if ((src == NULL) && (dest == NULL))					/*se comprueban los parametros pasados*/
 		return (NULL);
 	while (i < n)
 	{
