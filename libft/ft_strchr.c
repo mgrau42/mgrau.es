@@ -17,9 +17,9 @@
 char	*ft_strchr(char *str, int c)
 {
 
-	if (!(str))				/*se comprueba el string aportado*/
+	if (!(str))			/*se comprueba el string aportado*/
 		return (NULL);
-	while (*str != '\0')	/*se recorre la cadena*/
+	while (*str != '\0')		/*se recorre la cadena*/
 	{
 		if (*str == c)		/*en caso de encontrar el caracter se de vuelve esa posicion*/
 			return (str);
