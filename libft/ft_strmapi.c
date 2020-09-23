@@ -24,10 +24,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	if (!(str = (char *)malloc(ft_strlen((char *)s) + 1)))	/*se asigna memoria*/
 		return (ft_strdup(""));
-	buff = (char *)s;										/*se guarda una copia de la direccion inicial*/
+	buff = (char *)s;					/*se guarda una copia de la direccion inicial*/
 	while (s[i] != '\0')
 	{
-		str[i] = f(i, buff[i]);								/*se aplica la funcion y se guarda en la nueva cadena*/
+		str[i] = f(i, buff[i]);				/*se aplica la funcion y se guarda en la nueva cadena*/
 		i++;
 	}
 	str[i] = '\0';
