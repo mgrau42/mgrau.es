@@ -22,5 +22,5 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
-	return (0); 													/*si no existen diferencias en los bytes comparados se devuelve 0*/
+	return (0); 									/*si no existen diferencias en los bytes comparados se devuelve 0*/
 }
