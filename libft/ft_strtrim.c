@@ -38,22 +38,22 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 
 	i = 0;
-	if ((!s1) || (!set))									/*se comprueban los parametros pasados*/
+	if ((!s1) || (!set))					/*se comprueban los parametros pasados*/
 		return (NULL);
-	while ((s1[i] != '\0') && (set_search(s1[i], set)))		/*se recorre la cadena hasta la posicion sin los caracteres indicados por set*/
+	while ((s1[i] != '\0') && (set_search(s1[i], set)))	/*se recorre la cadena hasta la posicion sin los caracteres indicados por set*/
 		i++;
-	if (i == (ft_strlen((char *)s1)))						/*en caso de que se haya recorrido la cadena entera y sea enteramente caracteres que se encuentran en set se devuelve un puntero nulo*/
+	if (i == (ft_strlen((char *)s1)))			/*en caso de que se haya recorrido la cadena entera y sea enteramente caracteres que se encuentran en set se devuelve un puntero nulo*/
 		return (ft_strdup(""));
-	strstart = (char *)&s1[i];								/*guardamos la posicion inicial del trozo que nos interesa*/
-	i = (ft_strlen((char *)s1) - 1);						/*movemos el iterador al final de la cadena*/
-	while ((i >= 0) && (set_search(s1[i], set)))			/*realizamos la misma operacion desde el final*/
+	strstart = (char *)&s1[i];				/*guardamos la posicion inicial del trozo que nos interesa*/
+	i = (ft_strlen((char *)s1) - 1);			/*movemos el iterador al final de la cadena*/
+	while ((i >= 0) && (set_search(s1[i], set)))		/*realizamos la misma operacion desde el final*/
 		i--;
 	if ((!*s1) || ((strend = (char *)&s1[i]) == strstart))	/* guardamos la posicion final en strend y comprobamos que es distinta de la inicial*/
-		size = 2;											/*en caso de que sean iguales el tamaño de la compia es igual a 2, un caracter mas el caracter nulo*/
-	else													/*en caso alternativo calculamos el largo de la cadena*/
+		size = 2;					/*en caso de que sean iguales el tamaño de la compia es igual a 2, un caracter mas el caracter nulo*/
+	else							/*en caso alternativo calculamos el largo de la cadena*/
 		size = strend - strstart + 2;
-	if (!(str = malloc(sizeof(char) * size)))				/*se asigna la memoria calculada en pasos anteriores*/
+	if (!(str = malloc(sizeof(char) * size)))		/*se asigna la memoria calculada en pasos anteriores*/
 		return (NULL);
-	ft_strlcpy(str, strstart, size);						/*se copia la cadena requerida usando el puntero al comienzo y la medida de la cadena*/
-	return (str);											/*se devuelve la cadena*/
+	ft_strlcpy(str, strstart, size);			/*se copia la cadena requerida usando el puntero al comienzo y la medida de la cadena*/
+	return (str);						/*se devuelve la cadena*/
 }
