@@ -18,7 +18,7 @@ char			*ft_strrchr(char *str, int c)
 {
 	int			i;
 
-	if (!(str))					/*se comprueba la cadena*/
+	if (!(str))				/*se comprueba la cadena*/
 		return (NULL);
 	i = ft_strlen(str);			/*se comprueba el largo de la cadena*/
 	while (i >= 0)				/*se comprueba la cadena desde el final*/
