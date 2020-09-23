@@ -26,14 +26,14 @@ int	ft_atoi(char *str)
 	|| (str[i] == '\n') || (str[i] == '\v') ||\
 	(str[i] == '\f') || (str[i] == '\r'))		/*nos saltamos todos los espacio hasta el primer caracter que nos interesa*/
 		i++;
-	if (str[i] == 45)							/*en caso que este sea "-" modificamos nuestro contador de negativo*/
+	if (str[i] == 45)				/*en caso que este sea "-" modificamos nuestro contador de negativo*/
 	{
 		neg = neg * -1;
 		i++;
 	}
-	else if (str[i] == 43)						/*si nos encontramos un "+"" avanzamos*/
+	else if (str[i] == 43)				/*si nos encontramos un "+" avanzamos*/
 		i++;
 	while ((str[i] >= 48) && (str[i] <= 57))	/*una vez encontrados los numeros realizamos la conversion a entero*/
 		nb = (nb * 10) + (str[i++] - 48);
-	return (nb * neg);							/*devolvemos el numero entero multiplicado por el contador de negativos que determina si es positivo o negativo*/
+	return (nb * neg);				/*devolvemos el numero entero multiplicado por el contador de negativos que determina si es positivo o negativo*/
 }
