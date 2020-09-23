@@ -20,15 +20,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 
 	i = 0;
-	if ((!s1) || (!s2))															/*se comprueban las cadenas*/
+	if ((!s1) || (!s2))								/*se comprueban las cadenas*/
 		return (NULL);
 	str = (char *)malloc((ft_strlen((char *)s1)) + ft_strlen((char *)s2) + 1);	/*se asigna la memoria, el largo de las cadenas + 1*/
 	if (str == NULL)
 		return (NULL);
-	while (*s1)																	/*se añade la primera cadena*/
+	while (*s1)									/*se añade la primera cadena*/
 		str[i++] = *s1++;
-	while (*s2)																	/*se añade la segunda cadena*/
+	while (*s2)									/*se añade la segunda cadena*/
 		str[i++] = *s2++;
-	str[i] = '\0';																/*se termina la cadena*/
+	str[i] = '\0';									/*se termina la cadena*/
 	return (str);
 }
