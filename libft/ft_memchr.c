@@ -29,5 +29,5 @@ void	*ft_memchr(const void *src, int c, size_t n)
 		}
 		i++;
 	}
-	return (NULL);												/*en caso de no encontrar ninguna coincidencia devolvemos un nulo*/
+	return (NULL);							/*en caso de no encontrar ninguna coincidencia devolvemos un nulo*/
 }
