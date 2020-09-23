@@ -1,4 +1,4 @@
-Muy buenas.
+Buenos dias.
 Este repositorio contiene algunas de las funciones que he creado en la escuela de programacion 42 telefonica.
 Siguen la norma de la escuela, entre ellas no usar ciertas funciones o no inicializar las variables en la misma linea de la declaracion.
 Aunque tal vez no la forma mas eficiente, sin duda es un codigo facil de leer por esta razon, os invito a los que querais ojearlo un poco.
