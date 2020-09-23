@@ -17,7 +17,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst && f)
 	{
-		(*f)(lst->content);			/*se aplica la funcion al contenido*/
+		(*f)(lst->content);		/*se aplica la funcion al contenido*/
 		if (lst->next == NULL)		/*en caso de que este elemento se el final de la lista se detiene el programa*/
 			return ;
 		ft_lstiter(lst->next, f);	/*se aplica esta funcion al siguiente miembro de la lista*/
