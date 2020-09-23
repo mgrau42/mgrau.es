@@ -17,11 +17,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list *tmp;
 
-	if (!*lst)				/*se comprueba que la lista existe, si no es asi new es el comienzo de nuestra lista*/
+	if (!*lst)		/*se comprueba que la lista existe, si no es asi new es el comienzo de nuestra lista*/
 	{
 		*lst = new;
 		return ;
 	}
 	tmp = ft_lstlast(*lst);	/*se usa tmp para contener el ultimo miembro de la lista, el cual se busca mediante la funcion lstlast*/
-	tmp->next = new;		/*se añade new al final de la lista*/
+	tmp->next = new;	/*se añade new al final de la lista*/
 }
