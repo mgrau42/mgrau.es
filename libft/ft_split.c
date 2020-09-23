@@ -82,9 +82,9 @@ char			**ft_split(char const *s, char c)
 		if (!(matrix[e] = (char *)malloc(sizeof(char) * strsplen(s, c, i) + 1)))	/*se adjudica la memoria de la cadena de caracteres*/
 			return (bigfree(matrix, e));
 		while ((s[i] != '\0') && (s[i] != c))
-			matrix[e][g++] = s[i++];												/*se copia la cadena*/
+			matrix[e][g++] = s[i++];						/*se copia la cadena*/
 		matrix[e++][g] = '\0';
 	}
-	matrix[e] = 0;																	/*se termina el array*/
-	return (matrix);																/*se devuelve el array*/
+	matrix[e] = 0;										/*se termina el array*/
+	return (matrix);									/*se devuelve el array*/
 }
