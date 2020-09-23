@@ -24,7 +24,7 @@ char	*ft_strdup(const char *str1)
 	if (!(ptr = (char *)malloc(i + 1)))	/*se asigna memoria*/
 		return (NULL);
 	i = 0;
-	while (str1[i] != '\0')				/*se copia la cadena*/
+	while (str1[i] != '\0')			/*se copia la cadena*/
 	{
 		ptr[i] = str1[i];
 		i++;
