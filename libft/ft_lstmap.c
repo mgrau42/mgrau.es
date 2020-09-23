@@ -40,7 +40,7 @@ t_list				*ft_lstmap(t_list *t, void *(*f)(void *), void (*d)(void *))
 	newelem = (t_list *)malloc(sizeof(t_list));		/*se asigna el espacio para el nuevo elemento de la lista*/
 	if (!newelem)
 		return (ft_lstclearm(&newelem, d));
-	newelem->content = f(t->content);				/*se guarda el resultado de aplicar la funcion en el contenido de la lista original*/
+	newelem->content = f(t->content);			/*se guarda el resultado de aplicar la funcion en el contenido de la lista original*/
 	if (t->next)
 	{
 		newelem->next = ft_lstmap(t->next, f, d);	/*se aplica esta funcion al siguiente elemento de la lista*/
@@ -48,6 +48,6 @@ t_list				*ft_lstmap(t_list *t, void *(*f)(void *), void (*d)(void *))
 			return (ft_lstclearm(&newelem, d));
 	}
 	else
-		newelem->next = NULL;						/*en caso de que el siguiente elemento de la lista original sea el ultimo terminamos nuestra nueva lista*/
-	return (newelem);								/*devolvemos nuestra nueva lista*/
+		newelem->next = NULL;				/*en caso de que el siguiente elemento de la lista original sea el ultimo terminamos nuestra nueva lista*/
+	return (newelem);					/*devolvemos nuestra nueva lista*/
 }
