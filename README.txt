@@ -10,4 +10,8 @@ Hasta entonces, gracias por su interes.
 23/sep/2020
 Añadida Libft, libreria de uso general con funciones utiles para el resto del curso 42 Madrid
 
+03/oct/2020
+Añadido Get Next Line, projecto cuyo objetivo era realizar una funcion que leyera linea a linea un texto pasado a travez del fd.
+Se trata de un buen ejercicio para entender las variables estaticas.
+
 Manuel Alejandro Grau Bastidas. 
