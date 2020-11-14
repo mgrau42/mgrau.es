@@ -12,12 +12,12 @@
 
 #include "libftprintf.h"
 
-//guardamos el argumento y pasamos a las funciones de impresion
+//guardamos el argumento y pasamos a las funciones de impresión
 int	store_c(t_tab *t, t_flags *flags, va_list args)
 {
 	char	c[2];
 
-	*c = (char)va_arg(args, int); // en este caso se trata de un solo caracter
+	*c = (char)va_arg(args, int); // en este caso se trata de un solo carácter
 	if (c[0] == 0)
 		flags->isnull = 1;
 	c[1] = '\0';
