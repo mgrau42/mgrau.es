@@ -12,15 +12,15 @@
 
 #include "libftprintf.h"
 
-// esta funcion es practicamente igual que la funcion que guarda la precision
-// se realiza una copia de la porcion numerica o busca el argumento
+// esta funcion es practicamente igual que la función que guarda la precisión
+// se realiza una copia de la porción numérica o busca el argumento
 
 char	*store_width(char *format, t_flags *flags, va_list args)
 {
 	flags->convertf_is_width = 1;
 	if (*format == '*')
 	{
-		flags->field_width = va_arg(args, int); // en caso de estar guardada como argumento
+		flags->field_width = va_arg(args, int);			 // en caso de estar guardada como argumento
 		if (flags->field_width < 0)
 		{
 			flags->convertf_is_minus = 1;
@@ -29,6 +29,6 @@ char	*store_width(char *format, t_flags *flags, va_list args)
 		return (++format);
 	}
 	else
-		format = scommon(format, &flags->field_width); //scommon se usa tanto para guardar la precision como el ancho cuando estan en nuestro string de formato
+		format = scommon(format, &flags->field_width); 		//scommon se usa tanto para guardar la precisión como el ancho cuando estan en nuestro string de formato
 	return (format);
 }
