@@ -1,0 +1,20 @@
+El objetivo de este proyecto ha sido recrea la función printf de las librerías estándar.
+el formato debe ser exactamente igual al del printf original, por ejemplo:
+
+ft_printf("%s World %d\n", "Hello", 42);
+printf("%s World %d\n", "Hello", 42);
+
+Debería mostrar
+
+ Hello World 42
+ Hello World 42
+
+ Se diseñó este proyecto para entender cómo se han de usar los argumentos variables.
+ ft_print ha de cumplir los siguientes requisitos:
+
+	Manejar las siguientes conversiones: c s p d i u x X %
+	Manejar los siguientes flags - 0 . *
+	Manejar las conversiones de precisión y de ancho
+	El proyecto ha de usar el comando ar para crear la librería
+  
+Las funciones de libft son las funciones del proyecto ft_libft y vienen explicadas alli mas a fondo.
