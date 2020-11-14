@@ -1,0 +1,80 @@
+html{
+	height: 100%;
+}
+
+body {
+	background-image:url("https://cdn.hipwallpaper.com/i/98/57/2WSgwj.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+}
+
+.Text {
+	text-align: center;
+}
+h1 {
+	font-size: 400%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: oblique;
+	color: rgb(74, 52, 67);
+	border: black;
+	background-color: rgb(219, 61, 26);
+
+}
+h2 {
+	font-size: 300%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+	color:rgb(240,247,194);
+}
+p {
+	font-size: 250%;
+	color:rgb(240,247,194);
+}
+
+
+button:before {
+	content: '';
+    display: inline-block;
+	background-size:contain;
+    background-repeat: no-repeat;
+	position: relative;
+	right: 1em;
+	height: 35px;
+	width: 35px;
+}
+
+#phpbutton:before {
+	background-image: url(https://e7.pngegg.com/pngimages/838/327/png-clipart-website-development-programming-language-computer-programming-logo-php-program-logo-blue-text-thumbnail.png);
+	border-radius: 20px;
+}
+
+#wordpbutton:before {
+	background-image: url(https://image.flaticon.com/icons/png/512/23/23763.png);
+}
+
+#phpbutton {
+	right: 150px;
+}
+
+#wordpbutton {
+	left: 150px;
+}
+button {
+	height: 150%;
+	position: relative;
+	width: 390px;
+	bottom: -70px;
+	border: none;
+	border-radius: 15px;
+	background-color: rgb(63,107,91);
+	font-size: 200%;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+	color: rgb(240,247,194);
+	text-transform: uppercase;
+}
