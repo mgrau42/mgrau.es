@@ -12,9 +12,9 @@
 
 #include "libftprintf.h"
 
-// funciones de impresion con la cual se puede imprimir los espacios y 0s
-// extra determinados por la precision y el width
-// el uso de cada una depende de los flags conversores usado, son muy parecidas funcionan igual pero imprimen cosas en orden distinto o el calculo es de space y num es ligeramente distinto.
+// funciones de impresión con las cuales se puede imprimir los espacios y 0s
+// extra determinados por la precisión y el width
+// el uso de cada una depende de los flags conversores usado, son muy parecidas funcionan igual, pero imprimen cosas en orden distinto o el cálculo es de space y num es ligeramente distinto.
 
 void	add_tonum(t_tab *t, t_flags *flags, char *c)
 {
@@ -25,7 +25,7 @@ void	add_tonum(t_tab *t, t_flags *flags, char *c)
 	num = 0;
 	spaces = 0;
 	varlen = (flags->isnull ? 1 : ft_strlen(c));
-	if ((flags->convertf_is_dot == 1) && (flags->precision > varlen)) //en esta primera parte determinamos cuanto vale spaces y num
+	if ((flags->convertf_is_dot == 1) && (flags->precision > varlen)) 	//en esta primera parte determinamos cuanto vale spaces y num
 		spaces = flags->field_width - \
 		(flags->precision + flags->int_is_neg);
 	else
@@ -34,7 +34,7 @@ void	add_tonum(t_tab *t, t_flags *flags, char *c)
 		(flags->convertf_is_dot = 0);
 	}
 	num = flags->precision - varlen;
-	print_space(spaces, &t->len); // sabiendo el valor de estos imprimimos en el orden necesario
+	print_space(spaces, &t->len); 						// sabiendo el valor de estos imprimimos en el orden necesario
 	if (flags->int_is_neg)
 		write(1, "-", 1);
 	print_zero(num, &t->len);
