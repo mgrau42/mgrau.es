@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libftprintf.h"
-// comprobamos que tipo de argumento nos solicitan y redirigimos a su funcion.
+// comprobamos que tipo de argumento nos solicitan y redirigimos a su función.
 
 int	general_specifiers(t_tab *t, t_flags *flags)
 {
