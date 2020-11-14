@@ -12,7 +12,7 @@
 
 #include "libftprintf.h"
 
-// practicamente igual que la funcion store_i
+// prácticamente igual que la función store_i
 int	store_u(t_tab *t, t_flags *flags, va_list args)
 {
 	int		i;
