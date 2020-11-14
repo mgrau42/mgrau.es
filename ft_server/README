@@ -1,0 +1,9 @@
+Proyecto pra 42 Madrid telefonica. cuyo objetivo es crear un servidor con Nginx usando un unico contenedor de docker.
+
+Instrucciones generales del proyecto:
+
+• El OS del contenedor ha de ser debian Buster.
+• El servidor ha de ser capaz de correr varios servicios a la vez. en concreto una pagina web de Wordpress, phpMyAdmin y MySQL. 
+• Las bases de datos de SQL han de funcionar con wordpress y phpMyAdmin.
+• EL servidor ha de ser capaz de usar el protocolo SSL.
+• El servidor ha de correr con auto index y ha de ser posible detenerlo e inicializarlo a necesidad.
