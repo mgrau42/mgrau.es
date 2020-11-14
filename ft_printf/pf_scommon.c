@@ -12,7 +12,7 @@
 
 #include "libftprintf.h"
 
-// se usa para guardar la info de precision o ancho de la cadena format en data
+// se usa para guardar la info de precisión o ancho de la cadena format en data
 char	*scommon(char *format, int *data)
 {
 	int		s_len;
