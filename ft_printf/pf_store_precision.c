@@ -12,20 +12,20 @@
 
 #include "libftprintf.h"
 
-// esta funcion es practicamente igual que la funcion que guarda el ancho
-// se realiza una copia de la porcion numerica o busca el argumento
+// esta función es prácticamente igual que la función que guarda el ancho
+// se realiza una copia de la porción numérica o busca el argumento
 
 char	*store_precision(char *format, t_flags *flags, va_list args)
 {
 	flags->convertf_is_dot = 1;
 	if (*format == '*')
 	{
-		flags->precision = va_arg(args, int); // en caso de estar guardada como argumento
+		flags->precision = va_arg(args, int); 		// en caso de estar guardada como argumento
 		if (flags->precision < 0)
 			flags->convertf_is_dot = 0;
 		return (++format);
 	}
 	else
-		format = scommon(format, &flags->precision); //scommon se usa tanto para guardar la precision como el ancho cuando estan en nuestro string de formato
+		format = scommon(format, &flags->precision);	 //scommon se usa tanto para guardar la precisión como el ancho cuando estan en nuestro string de formato
 	return (format);
 }
