@@ -12,7 +12,7 @@
 
 #include "libftprintf.h"
 
-//guardamos el argumento y pasamos a las funciones de impresion
+//guardamos el argumento y pasamos a las funciones de impresión
 
 void	store_i(t_tab *t, t_flags *flags, va_list args)
 {
@@ -21,7 +21,7 @@ void	store_i(t_tab *t, t_flags *flags, va_list args)
 	char	*tmp;
 
 	i = (va_arg(args, int));
-	c = ft_itoa(i); /*guardamos la funcion como cadena para su impresion*/
+	c = ft_itoa(i); /*guardamos la función como cadena para su impresión*/
 	tmp = c;
 	if (i < 0)
 	{
@@ -29,12 +29,12 @@ void	store_i(t_tab *t, t_flags *flags, va_list args)
 		tmp++;
 		t->len++;
 	}
-	if ((!c) || ((flags->precision <= 0) && (flags->convertf_is_dot == 1))) /* en caso que la cadena sea nula o la precision sea menor o igual a 0 */
+	if ((!c) || ((flags->precision <= 0) && (flags->convertf_is_dot == 1))) /* en caso que la cadena sea nula o la precisión sea menor o igual a 0 */
 	{
 		free(c);
 		c = ft_strdup("");
 	}
-	if ((flags->convertf_is_zero == 0) && (flags->convertf_is_minus == 0)) // dependiendo de si tenemos algun flag conversor entraremos en alguna de las distintas funciones de impresion
+	if ((flags->convertf_is_zero == 0) && (flags->convertf_is_minus == 0)) // dependiendo de si tenemos algun flag conversor entraremos en alguna de las distintas funciones de impresión
 		add_tonum(t, flags, tmp);
 	else if (flags->convertf_is_minus == 1)
 		add_tonum_minus(t, flags, tmp);
