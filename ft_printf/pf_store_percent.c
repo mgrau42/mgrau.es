@@ -12,7 +12,7 @@
 
 #include "libftprintf.h"
 
-// similar a a store_c, se guarda el caracter % para su impresion en c
+// similar a a store_c, se guarda el carácter % para su impresión en c
 int	store_percent(t_tab *t, t_flags *flags)
 {
 	char	*c;
