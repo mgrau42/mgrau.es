@@ -12,7 +12,7 @@
 
 #include "libftprintf.h"
 
-//guardamos el argumento y pasamos a las funciones de impresion
+//guardamos el argumento y pasamos a las funciones de impresión
 
 int	store_s(t_tab *t, t_flags *flags)
 {
