@@ -14,4 +14,8 @@ Añadida Libft, libreria de uso general con funciones utiles para el resto del c
 Añadido Get Next Line, projecto cuyo objetivo era realizar una funcion que leyera linea a linea un texto pasado a travez del fd.
 Se trata de un buen ejercicio para entender las variables estaticas.
 
+14/11/2020
+Añadido ft_printf, projecto que recrea la función printf de las librerías estándar.
+Añadido ft_server, proyecto cuyo objetivo es crear un servidor con Nginx usando un unico contenedor de docker.
+
 Manuel Alejandro Grau Bastidas. 
