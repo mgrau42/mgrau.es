@@ -12,17 +12,17 @@
 
 #include "libftprintf.h"
 
-//determina si existe algun caracter conversor
+//determina si existe algún carácter conversor
 char	*general_converter(char *format, t_flags *flags, va_list args)
 {
-	while ((*format == '-') || (*format == '0')) /* en caso de existir - o 0 se guarda esa informacion para su posterior uso */
+	while ((*format == '-') || (*format == '0')) 	/* en caso de existir - o 0 se guarda esa información para su posterior uso */
 	{
 		if (*(format++) == '-')
 			flags->convertf_is_minus = 1;
 		else
 			flags->convertf_is_zero = 1;
 	}
-	if ((*format == '*') || (ft_isdigit(*format))) /*en caso de estar determinado el ancho o la precison se entra en las funciones store_ donde se guardan esos valores*/
+	if ((*format == '*') || (ft_isdigit(*format))) /*en caso de estar determinado el ancho o la precisión se entra en las funciones store_ donde se guardan esos valores*/
 		format = store_width(format, flags, args);
 	if (*format == '.')
 		format = store_precision(++format, flags, args);
